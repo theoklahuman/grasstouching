@@ -1,19 +1,26 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     background: #808080a2;
 }
 
-h2,
-h4,
-div,
-button {
-    text-align: center;
+.main-container {
+   background: #80808034;
+   border-radius: 1rem;
+   text-align: center;
+   margin: 80% auto;
+   padding: 2rem;
 }
 
 button {
     cursor: pointer;
     margin: 1rem auto;
     display: block;
-    background: inherit;
+    background: #808080a2;
     border: none;
     padding: 0.5rem;
 }
@@ -25,10 +32,6 @@ button:hover {
 
 .idea-display {
     display: none;
-}
-
-.upbeat-theme {
-    background: magenta;
 }
 
 .visible {

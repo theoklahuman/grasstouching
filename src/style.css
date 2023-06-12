@@ -4,16 +4,23 @@ body {
 
 h2,
 h4,
+div,
 button {
     text-align: center;
 }
 
 button {
+    cursor: pointer;
     margin: 1rem auto;
     display: block;
     background: inherit;
     border: none;
     padding: 0.5rem;
+}
+
+button:hover {
+    background: white;
+    color: #808080a2;
 }
 
 .idea-display {
@@ -27,4 +34,7 @@ button {
 .visible {
     display: block;
     text-align: center;
+    border-radius: 0.3rem;
+    background: #6ae66ab6;
+    border: none;
 }

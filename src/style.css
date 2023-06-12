@@ -1,0 +1,30 @@
+body {
+    background: #808080a2;
+}
+
+h2,
+h4,
+button {
+    text-align: center;
+}
+
+button {
+    margin: 1rem auto;
+    display: block;
+    background: inherit;
+    border: none;
+    padding: 0.5rem;
+}
+
+.idea-display {
+    display: none;
+}
+
+.upbeat-theme {
+    background: magenta;
+}
+
+.visible {
+    display: block;
+    text-align: center;
+}

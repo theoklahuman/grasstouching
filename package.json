@@ -5,10 +5,10 @@
   "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "deploy": "git subtree push --prefix dist origin gh-pages",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",

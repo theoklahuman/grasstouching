@@ -19,9 +19,3 @@ function displayIdea() {
     });
     ideaDisplay.classList.add("visible");
 }
-
-// function addIdeaInformation() {
-//     const info = document.createElement("div");
-//     info.textContent = "this is a test";
-//     ideaDisplay.insertAdjacentElement("afterend", info);
-// }

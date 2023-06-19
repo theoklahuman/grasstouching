@@ -19,12 +19,13 @@ async function getIdea() {
 
 function displayIdea() {
   getIdea().then((value) => {
+    const ideainfo = value[0].charAt(0).toLowerCase() + value[0].slice(1);
     if (value[1] <= 1) {
-      ideaDisplay.textContent = `You can ${value[0]}! this can be done all by yourself for as low as $${parseFloat(value[2]).toFixed(2)}`;
+      ideaDisplay.textContent = `You can ${ideainfo}! this can be done all by yourself for as low as $${parseFloat(
+        value[2]
+      ).toFixed(2)}`;
     } else {
-      ideaDisplay.textContent = `You can ${
-        value[0]
-      }, this can be done with up to ${
+      ideaDisplay.textContent = `You can ${ideainfo}, this can be done with up to ${
         value[1] - 1
       } other people for as low as $${value[2]}`;
     }
@@ -44,3 +45,62 @@ function ideaControllerHandler() {
     displayIdea();
   }
 }
+
+
+
+let company = {
+  sales: [
+    {
+      name: "John",
+      salary: 1000,
+    },
+    {
+      name: "Alice",
+      salary: 1600,
+    },
+  ],
+
+  development: {
+    sites: [
+      {
+        name: "Peter",
+        salary: 2000,
+      },
+      {
+        name: "Alex",
+        salary: 1800,
+      },
+    ],
+
+    internals: [
+      {
+        name: "Jack",
+        salary: 1300,
+      },
+    ],
+  },
+};
+
+console.log(company.sales[0].name);
+
+class Animal {
+  constructor(name, type, legs) {
+    this.name = name;
+    this.type = type;
+    this.legs = legs;
+    this.speed = 0;
+  }
+
+  runs() {
+    console.log(`${this.name} is running`);
+  }
+
+  stops() {
+    console.log(`${this.name} has stopped running`);
+  }
+}
+
+const firstAnimal = new Animal("rabbit", "wild", 4);
+firstAnimal.runs();
+firstAnimal.stops();
+console.log(firstAnimal.speed);
